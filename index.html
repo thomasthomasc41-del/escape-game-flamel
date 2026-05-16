@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Nicolas Flamel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Flamel - Pierre de Phidélisation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>Nicolas Flamel et la pierre de Phidélisation</h1>
+  <main id="game">
+    <section class="screen home">
+      <div class="overlay">
+        <h1>Nicolas Flamel</h1>
+        <h2>À la recherche de la pierre de Phidélisation</h2>
 
-  <p>
-    Bienvenue dans l'aventure.
-  </p>
+        <p>
+          La maison de ton grand-père est restée intacte depuis sa disparition.
+          Sur son bureau, un carnet ancien semble t’attendre...
+        </p>
 
+        <button onclick="startGame()">Commencer l’enquête</button>
+        <button class="secondary" onclick="resetGame()">Réinitialiser</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
